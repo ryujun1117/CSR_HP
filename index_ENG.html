@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>top page</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" href="css/reset.css">
+        <link rel = "stylesheet" href="css/style.css">
+        <script type="text/javascript" src="lib/background.js"></script>
+    </head>
+    <body>        
+            <script type="text/javascript">
+            (function() {
+            var i = 0;
+            
+            //↓使用する画像のURL（任意の数）
+            var bg = ["../images/back0.jpg",
+            "../images/back1.jpg",
+            "../images/back2.jpg", 
+            "../images/back3.jpg",
+            "../images/back4.jpg",
+            "../images/back5.jpg",
+            "../images/back6.png",
+            "../images/back7.jpg",
+            ];
+            
+            var timer = window.setInterval(function() {
+            i = (i === bg.length - 1) ? 0 : i + 1;
+            document.body.style.backgroundImage = "url(" + bg[i] + ")";
+            }, 10000); //←時間（5000＝5秒）
+            })();
+            </script>
+
+
+        <header>
+            <p class="site-title-sub">北海道大学　低温科学研究所</p>
+            <h1 class="site-title">気候システム研究室</h1>
+            <p class="site-description"><strong>関研究室のホームページです</strong></p>
+            <p class="site-description"><strong>当研究室では大学院生を募集しています</strong></p>
+            <p class="site-description"><strong>ご興味のある学生さんはこちら（seki at lowtem.hokudai.ac.jp）関 宰までお気軽にご連絡ください</strong></p>
+        </header>
+        <main class= main>
+            <div class =white>
+                <h1 class = "menu">↓↓↓Learn More↓↓↓</h1>
+                <div class="bottons">
+                    <a class="button button-1" href="#about">メンバー</a>
+                    <a class="button button-2" href="#content">業績</a>
+                    <a class="button button-3" href="#content">講義</a>
+                    <a class="button button-4" href="#content">研究について</a>
+                    <a class="button button-5" href="#content">大学院について</a>
+                    <a class="button button-6" href="#content">プロジェクト</a>
+                    <a class="button button-7" href="#content">フィールドワーク</a>
+                </div>
+
+            </div>
+            <div class = black>
+                <h1 class = "menu">研究の概要</h1>
+                <p class="gaiyo-text">
+                    地球の気候システムは複数のサブシステムから成り、このシステムに外部から強制力が加えられると複雑に相互作用し、気候が変化します。
+                </p>
+                <p class="gaiyo-text">
+                    将来の気候変動を正しく予測するにはこの気候システムがどのような仕組みで動いているのかを深く理解する必要があります。
+                </p>
+                <p class="gaiyo-text">
+                    しかし強制力に対する各サブシステムの応答は短時間ですぐに応答するものから、長い時間をかけてゆっくりと応答するものまで様々であり、いまだにその全容は明らかになっていません。
+                </p>
+                <p class="gaiyo-text">
+                    気候システム全体を理解するには長い時間スケールを含む気候変動の時系列データの解析が必要となります。
+                </p>
+                <p class="gaiyo-text">
+                    当研究室では世界各地の様々な古気候アーカイブ（海洋、湖沼堆積物やアイスコアなど）から様々な時間スケールの気候変動を復元し、得られた古気候データを解析することで、気候システムのからくりの解明に挑戦しています。
+                </p>
+            </div>
+            <div class = white>
+                <h1 class="menu">研究対象</h1>
+                <li class="gaiyo-text">
+                    海洋：オホーツク海，ベーリング海，東赤道太平洋，カリブ海，南大洋，北大西洋など
+                </li>
+                <li class="gaiyo-text">
+                    湖沼：北海道湖沼、北海道泥炭，琵琶湖，Hongyuan（チベット)，Hani（中国北東部）など
+                </li>
+                <li class="gaiyo-text">
+                    アイスコア：グリーンランド氷床，南極氷床、カムチャツカ山岳氷河，アラスカ山岳氷河など
+                </li>
+                <img src="../images/sample map.png">
+            </div>
+            <div class = black>
+                <h1 class="menu">キーワード</h1>
+                <p class="gaiyo-text">
+                    地球システム，気候システム，テレコネクション，放射強制力，気候感度，気候フィードバック，エアロゾル，北極振動，大西洋数十年規模振動，太平洋十年規模振動，エルニーニョ南方振動，モンスーン，中世温暖期，小氷期，氷期-間氷期サイクル，ミランコビッチサイクル，スーパー間氷期，ダンスガード・オシュガー・サイクル，北半球の氷床発達，鮮新世温暖期，後期中新世全球寒冷化，中期中新世気候最適期，バイオマーカー，微化石，同位体組成，海洋堆積物，湖沼堆積物，泥炭堆積物，アイスコア
+                </p>
+            </div>
+
+
+        </main>
+        <footer>
+
+        </footer>
+
+    </body>
+</html>

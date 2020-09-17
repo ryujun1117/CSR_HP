@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>top page</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" href="css/reset.css">
+        <link rel = "stylesheet" href="css/style.css">
+        <script type="text/javascript">
+            (function() {
+            var i = 0;
+            
+            //↓使用する画像のURL（任意の数）
+            var bg = [
+            "images/back1.jpg","images/back2.jpg", "images/back3.jpg","images/back4.jpg",
+            "images/back5.jpg","images/back6.png","images/back7.jpg","images/back8.jpg", "images/back9.jpg",
+            "images/back10.jpg","images/back11.jpg","images/back12.jpg","images/back13.jpg","images/back14.jpg",
+            "images/back15.jpg","images/back16.jpg", "images/back17.jpg"
+            ];
+            
+            var timer = window.setInterval(function() {
+            var random = Math.floor( Math.random() * 17 );
+            i = (i === bg.length - 1) ? 0 : random + 1;
+            document.body.style.backgroundImage = "url(" + bg[i] + ")";
+            }, 5000); //←時間（5000＝5秒）
+            })();
+            </script>
+            <!-一定時間経つと画像が切り替わる関数->
+    </head>
+    <body>        
+        <header>
+            <p class="site-title-sub">北海道大学　低温科学研究所</p>
+            <h1 class="site-title">気候システム研究室</h1>
+            <p class="site-title-sub2">--Climate System Research Group--</p>
+            <p class="site-description">関研究室のホームページです</p>
+            <p class="site-description">当研究室では大学院生を募集しています。ご興味のある学生さんはこちら（seki at lowtem.hokudai.ac.jp）<br>関 宰までお気軽にご連絡ください</p>
+            <p class="site-description"></p>
+            <nav class="global-nav">
+                <ul>
+                    <li class="nav-item active"><a href="index_JP.html">はじめに</a></li>
+                    <li class="nav-item"><a href="member.html">メンバー</a></li>
+                    <li class="nav-item"><a href="gyouseki.html">業績</a></li>
+                    <li class="nav-item"><a href="kougi.html">講義</a></li>
+                    <li class="nav-item"><a href="kenkyu.html">研究内容</a></li>
+                    <li class="nav-item"><a href="daigakuin.html">大学院進学</a></li>
+                    <li class="nav-item"><a href="project.html">プロジェクト</a></li>
+                    <li class="nav-item"><a href="fieldwork.html">フィールドワーク</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class = "wrapper clearfix">
+            
+            <main class= main>
+                <div class =black>
+                    <div class =lounge_area>
+                        <h1 class = "menu">ラウンジの開設☕️</h1>
+                        <img id = "lounge" src="images/pic_1.jpg" alt = "写真1" width=30% height=30%>
+                        <img id = "lounge" src="images/pic_2.jpg" alt = "写真2" width=30% height=30%>
+                        <img id = "lounge" src="images/pic_3.jpg" alt = "写真3" width=30% height=30%>
+                    </div>
+                </div>
+                <div class =white>
+                    <h1 class = "menu">お知らせ</h1>
+                    <ul class="scroll-list">
+                    <li class="scroll-item">
+                            <a href="#">
+                                <time class="date" datetime="2020-07.17">2020.07.17</time>
+                                <span class="category">NEWS</span>
+                                <span class="title">ラウンジが開設しました</span>
+                            </a>
+                        </li>
+                    <li class="scroll-item">
+                            <a href="#">
+                                <time class="date" datetime="2020-06-09">2020.06.23</time>
+                                <span class="category">TOPIC</span>
+                                <span class="title">シン・チキュウカガクセミナ　第4回　(飯塚担当)　でした</span>
+                            </a>
+                        </li>
+                    <li class="scroll-item">
+                            <a href="#">
+                                <time class="date" datetime="2020-06-09">2020.06.16</time>
+                                <span class="category">TOPIC</span>
+                                <span class="title">シン・チキュウカガクセミナ　第3回　(古川担当)　でした</span>
+                            </a>
+                        </li>
+                        <li class="scroll-item">
+                            <a href="#">
+                                <time class="date" datetime="2020-06-09">2020.06.09</time>
+                                <span class="category">TOPIC</span>
+                                <span class="title">シン・チキュウカガクセミナ　第2回　(瀬戸担当)　でした</span>
+                            </a>
+                        </li>
+                        <li class="scroll-item">
+                            <a href="#">
+                                <time class="date" datetime="2020-06-06">2020.06.06</time>
+                                <span class="category news">NEWS</span>
+                                <span class="title">ZOOMでの研究室訪問が可能です!</span>
+                            </a>
+                        </li>
+                        <li class="scroll-item">
+                            <a href="#">
+                                <time class="date" datetime="2020-06-03">2020.06.03</time>
+                                <span class="category news">NEWS</span>
+                                <span class="title">ホームページをリニューアルしました。</span>
+                            </a>
+                        </li>
+                        <li class="scroll-item">
+                            <a href="#">
+                                <time class="date" datetime="2020-06-01">2020.06.01</time>
+                                <span class="category">TOPIC</span>
+                                <span class="title">シン・チキュウカガクセミナ　第1回　でした</span>
+                            </a>
+                        </li>
+                        <li class="scroll-item">
+                            <a href="https://www.ees.hokudai.ac.jp/modules/news/index.php?page=article&storyid=16">
+                                <time class="date" datetime="2020-03-19">2020.03.19</time>
+                                <span class="category news">NEWS</span>
+                                <span class="title">飯塚さんが環境科学院写真コンテスト2019で最優秀賞を受賞！</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+
+                </div>
+                <div class = black>
+                    <h1 class = "menu">研究の概要</h1>
+                    <p class="gaiyo-text">
+                        地球の気候システムは複数のサブシステムから成り、このシステムに外部から強制力が加えられると複雑に相互作用し、気候が変化します。将来の気候変動を正しく予測するにはこの気候システムがどのような仕組みで動いているのかを深く理解する必要があります。
+                    </p>
+                    <p class="gaiyo-text">
+                        <br>しかし強制力に対する各サブシステムの応答は短時間ですぐに応答するものから、長い時間をかけてゆっくりと応答するものまで様々であり、いまだにその全容は明らかになっていません。気候システム全体を理解するには長い時間スケールを含む気候変動の時系列データの解析が必要となります。
+                    </p>
+                
+                    <p class="gaiyo-text">
+                        <br>当研究室では世界各地の様々な古気候アーカイブ（海洋、湖沼堆積物やアイスコアなど）から様々な時間スケールの気候変動を復元し、得られた古気候データを解析することで、気候システムのからくりの解明に挑戦しています。
+                    </p>
+                </div>
+                <div class = white>
+                    <h1 class="menu">研究対象</h1>
+                    <li class="gaiyo-text_li">
+                        海洋：オホーツク海，ベーリング海，東赤道太平洋，カリブ海，南大洋，北大西洋など
+                    </li>
+                    <li class="gaiyo-text_li">
+                        湖沼：北海道湖沼、北海道泥炭，琵琶湖，Hongyuan（チベット)，Hani（中国北東部）など
+                    </li>
+                    <li class="gaiyo-text_li">
+                        アイスコア：グリーンランド氷床，南極氷床、カムチャツカ山岳氷河，アラスカ山岳氷河など
+                    </li>
+                    <img src="images/sample map.png">
+                </div>
+                <div class = black>
+                    <h1 class="menu">キーワード</h1>
+                    <p class="gaiyo-text">
+                        地球システム，気候システム，テレコネクション，放射強制力，気候感度，気候フィードバック，<br>
+                        エアロゾル，北極振動，大西洋数十年規模振動，太平洋十年規模振動，エルニーニョ南方振動，<br>
+                        モンスーン，中世温暖期，小氷期，氷期-間氷期サイクル，ミランコビッチサイクル，スーパー間氷期，<br>
+                        ダンスガード・オシュガー・サイクル，北半球の氷床発達，鮮新世温暖期，後期中新世全球寒冷化，<br>
+                        中期中新世気候最適期，バイオマーカー，微化石，同位体組成，海洋堆積物，湖沼堆積物，泥炭堆積物, アイスコア
+                    </p>
+                </div>
+
+
+            </main>
+            <div class = "sidemenu">
+                <div class="black">
+                    <h2 class="menu">TOPIC</h2>
+                    <ul class="documents">
+                        <li>
+                            <h3 class="title">シン・チキュウカガクセミナ</h3>
+                            <ul class="gaiyo-text">
+                                <li><a href="https://note.com/climate_culture/n/nca04c21b66b4">オホーツク文化と気候変動</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="black">
+                    <h2 class="menu">所属機関</h2>
+                </div>
+                <ol class="side1">
+                    <li class="side1-item">
+                        <a href="https://www.hokudai.ac.jp/">
+                            <img class="image" src="./images/北大.png" alt="北海道大学">
+                        </a>
+                        <a href="http://www.lowtem.hokudai.ac.jp/">
+                            <img class="image" src="./images/toptitle.gif" alt="北海道大学低温科学研究所">
+                        </a>
+                        <a href="https://www.ees.hokudai.ac.jp/">
+                            <img class="image2" src="./images/logo2.jpg" alt="環境科学院">
+                        </a>
+                        <a href="https://www.ees.hokudai.ac.jp/division/earth/">
+                            <img class="image2" src="./images/main.jpg" alt="地球圏科学専攻">
+                        </a>
+                        <a href="https://pablos.ees.hokudai.ac.jp/bgc/index.html">
+                            <p class="text">生物地球化学コース</p>
+                        </a>
+                        
+                    </li>
+                </ol>
+                <div class="black">
+                    <h2 class="menu">関連研究室へのリンク</h2>
+                    <ul class="documents">
+                        <li>
+                            <h3 class="title"></h3>
+                            <ul class="gaiyo-text">
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="black">
+                    <h2 class="menu">OTHERS</h2>
+                    <ul class="documents">
+                        <li>
+                            <h3 class="title"><a href="https://www.instagram.com/seki_lab/">Instagram</a></h3>
+                            <ul class="gaiyo-text">
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                 <div class="black">
+                    <h2 class="menu">広告</h2>
+                    <ul class="documents">
+                        <li>
+                            <h3 class="title">サイト作ります</h3>
+                            <ul class="gaiyo-text">
+                                <li>各研究室のHP等でリデザインなどございましたらM2 瀬戸までお気軽にどうぞ(r_seto at pop.lowtem.hokudai.ac.jp)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer>
+            研究内容や進学などに興味がある学生は、お気軽に関までご連絡ください（tel: 011-706-5504, email: seki at lowtem.hokudai.ac.jp）<br>
+            Copyright © SEKI LAB – Faculty of Environmental Earth Science, Hokkaido University All Rights Reserved.
+        </footer>
+
+    </body>
+</html>

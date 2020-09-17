@@ -1,0 +1,364 @@
+@charset "UTF-8";
+
+html{
+    font-size: 62.5%;
+}
+header{
+    width:100%;
+    background:rgba(15,15,15,0.3); 
+    margin:30px auto;
+    width: 970px;
+    text-align:center;
+}
+.global-nav{
+    margin-top:15px;
+    text-align:center;
+    background-color: rgba(255,255,255,0.6);
+}
+.global-nav .nav-item{
+    display:inline-block;
+    margin:0 10px;
+}
+.global-nav .nav-item a{
+    display:inline-block;
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 8px;
+    color: black;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    transition: 0.15s;
+}
+.global-nav .nav-item.active a,
+.global-nav .nav-item a:hover{
+    background-color: #d03c56;
+    color: #fff;
+}
+
+footer{
+    width:100%;
+    text-align:center;
+}
+
+body{
+    background-image:url("images\back1.jpg") no-repeat fixed left bottom;
+    background-size: cover;
+    color: #fff;
+    font-size:1.2rem;
+    font-family: "Hiragino kaku Gothic ProN", 'Times New Roman';
+}
+
+
+*, *::before, *::after{
+    box-sizing:border-box;
+}
+a:link, a:visited, a:hover, a:active{
+    color:#d03c56;
+    text-decoration: none;
+}
+
+.wrapper{
+    width:970px;
+    margin: 30px auto 40px;
+}
+.main{
+    display:block;
+    float:left;
+    width: 660px;
+    
+    
+}
+.sidemenu{
+    float:right;
+    width:275px;
+    font-size:7.6rem;
+    text-align: center;
+    height:1525px;
+    background-color:rgb(225,225,225,0.6) ;
+    
+
+}
+
+.clearfix::after{
+    content:" ";
+    display:block;
+    clear:both;
+}
+
+.white{
+    color:black;
+    background:rgba(255,255,255,0.6); 
+    margin: 10px 0;
+    padding: 10px;
+    
+}
+.black{
+    background-color:rgba(0,0,0,0.6);
+    color:white;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.site-title-sub{
+    padding:40px 0 10px;
+    margin: 0 auto;
+    letter-spacing: 10px;
+    font-size: 2.2rem;
+}
+.site-title-sub2{
+    padding:10px 0 10px;
+    margin:0 auto 30px;
+    font-size: 2.0rem;
+    letter-spacing: 10px;
+}
+.site-title{
+    margin: 30px auto 0px;
+    font-size: 7.6rem;
+    letter-spacing:10px;
+    padding: 10px;
+}
+
+.site-description{
+    margin-bottom: 10px ;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    letter-spacing:2px;
+    padding: 5px;
+}
+
+.scroll-list{
+    max-height:220px;
+    overflow-y:auto;
+    margin-bottom:30px;
+    list-style-type:none;
+    text-align:left;
+}
+
+.scroll-list .scroll-item a{
+    display:block;
+    padding:10px 15px;
+    color: #333;
+    font-size:0;
+    transition:background-color 0.1s;
+}
+
+.scroll-list .scroll-item a:hover{
+    background-color:#fafaf8;
+}
+
+.scroll-list .date{
+    display:inline-block;
+    width:19%;
+    letter-spacing:1px;
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+
+.scroll-list .category{
+    display:inline-block;
+    width:8%;
+    border-radius: 5px;
+    background-color: #d03c56;
+    color:#fff;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size:1.0rem;
+    line-height:16px;
+}
+
+.scroll-list .category.news{
+    background-color: #2c3c53;
+}
+
+.scroll-list .title{
+    display:inline-block;
+    widows: 73%;
+    padding-left: 15%;
+    font-size:1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+
+.menu{
+    padding: 10px 12px;
+    font-size: 1.6rem;
+}
+
+.button{
+    display:block;
+    padding:30px;
+    border-radius: 4px;
+    color: black;
+    text-decoration: none;
+    letter-spacing:1px;
+    font-size: 2.5rem;
+    border-radius: 0%;
+    line-height: 100px;
+}
+.button-thispage{
+    background-color:rgba(35, 148, 223, 0.6);
+}
+.button-1{
+    background-color:rgba(255,255,255,0.6);
+
+}
+.botton-1:hover{
+    opacity: 0.3;
+}
+.button-2{
+    background-color:rgba(0,0,0,0.6);
+    color:white;
+}
+
+
+.gaiyo-text{
+    font-size: 1.2rem;
+    letter-spacing:1.5px;
+    line-height:2.0rem;
+    text-align:left;
+}
+
+.gaiyo-text_li{
+    font-size: 1.2rem;
+    letter-spacing:1.5px;
+    line-height:2.0rem;
+    text-align:left;
+}
+.kaigyo{
+    text-align: center; 
+}
+
+.member_box{
+    text-align: center;
+}
+
+.member_box .kaigyo{
+    display: inline-block;
+	padding: 10px 3%;
+    vertical-align: middle;
+    line-height: 1.0rem;
+    font-size: 1.8rem;
+}
+
+.member_box li {
+    display: inline-block;
+    width: 250px;
+	padding: 0 auto;
+    vertical-align: middle;
+    line-height: 2.5rem;
+    
+}
+.white .gyouseki_text{
+    margin: 25px;
+    padding:3px;
+    font-size: 1.3rem;
+    letter-spacing:1.3px;
+    line-height:1.3rem;
+}
+
+.black .gyouseki_text{
+    margin: 25px;
+    padding:3px;
+    font-size: 1.3rem;
+    letter-spacing:1.3px;
+    line-height:1.3rem;
+}
+.img{
+    text-align: center;
+    line-height: 30px;
+}
+.gaiyo-text_center{
+    font-size: 1.2rem;
+    letter-spacing:2.5px;
+    line-height:3.0rem;
+    padding: 0 auto ;
+}
+
+.souti .gaiyo-text{
+    padding: 10px 0;
+}
+
+.field_text{
+    font-size: 2.0rem;
+    padding: 10px;
+}
+
+.field_text li{
+    font-size: 2.0rem;
+    padding:10px;
+    margin:0 30px;
+}
+
+.side1{
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+.side1 .side1-item{
+    margin-top: 15px;
+}
+.side1 .side1-item a{
+    display: block;
+    font-size: 0;
+    transition: opacity 0.15s;
+}
+.side1 .side1-item a:hover{
+    opacity:0.8;
+}
+.side1 .image{
+    width: 275px;
+    height: 82.5px;
+}
+.side1 .image2{
+    width: 275px;
+    height: 118px;
+}
+.text{
+    padding-top: 35px;
+    display: inline-block;
+    width: 182px;
+    color: #000;
+    vertical-align: center;
+    font-size: 2.0rem;
+    line-height: 1.5;
+}
+.documents{
+    margin: 10px 10px 30px;
+}
+.documents,
+.documents ul{
+    list-style-type: none;
+}
+.documents > li .title{
+    margin: 15px 0;
+    padding-left: 8px;
+    border-left:5px solid #d03c56;
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+.documents > li + li{
+    margin-top: 25px;
+}
+
+.documents > li ul{
+    margin: 15px;
+}
+
+.documents > li ul > li{
+    margin-bottom: 15px;
+    padding-left: 10px;
+    
+}
+.documents a:hover{
+    text-decoration: underline;
+}
+
+#lounge_area{
+    vertical-align: middle
+}
+
+#lounge{
+    vertical-align: middle
+}
